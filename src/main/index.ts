@@ -63,7 +63,7 @@ class App {
   }
   onReady() {
     const readyFunction = async () => {
-      checkVersion();
+      // checkVersion();
       await localConfig.init();
       const config = await localConfig.getConfig();
       if (!config.perf.common.guide) {
